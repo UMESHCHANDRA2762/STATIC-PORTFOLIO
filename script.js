@@ -1,11 +1,8 @@
 function toggleSkills() {
-    const skillsList = document.getElementById("skills-list");
-    if (skillsList.style.display === "none") {
-      skillsList.style.display = "block";
-    } else {
-      skillsList.style.display = "none";
-    }
-  }
+  const skillsList = document.getElementById("skills-list");
+  skillsList.classList.toggle("hidden");
+}
+
   
   function validateForm() {
     const name = document.getElementById("name").value.trim();
