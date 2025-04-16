@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  font-size: 1.1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff7f50;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  background: #e0e0e0;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.skills-list li:hover {
+  background: #ccc;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff7f50;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  color: white;
+  border-radius: 25px 25px 0 0;
+}
+.animated-bg {
+  background: linear-gradient(-45deg, #f3ec78, #af4261, #74ebd5, #acb6e5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; /* ensures vertical layout */
+  gap: 0.5rem;
+}
+
+.skills-list li {
+  background: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* Hidden class to toggle visibility */
+.hidden {
+  display: none;
+}
+
+/* For Header */
+.main-header {
+  background: #111;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.main-header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.main-header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.main-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-header nav a:hover {
+  color: #ff7f50;
+}
+
+/* For Hero Section */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  gap: 2rem;
+}
+
+.hero-blue, .hero-yellow {
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.hero-blue {
+  background-color: #d0e8ff;
+  text-align: center;
+}
+
+.hero-yellow img {
+  width: 100%;
+  border-radius: 20px;
+}
+.main-header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff7f50;
+}

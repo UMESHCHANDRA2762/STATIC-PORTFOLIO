@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="animated-bg">
+
+<!-- Header -->
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo-circle">UC</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-blue">
+    <h1>Hello, I'm <small>Umesh Chandra</small></h1>
+    <p>A web developer who turns imagination into interactive reality</p>
+    <div class="social-links">
+      <a href="https://github.com/UMESHCHANDRA2762" target="_blank">
+        <img src="imgs/github.png" alt="GitHub" width="48" height="48" />
+      </a>
+      <a href="https://www.linkedin.com/in/teegala-umesh-chandra/" target="_blank">
+        <img src="imgs/link.jfif" alt="LinkedIn" width="48" height="48" />
+      </a>
+    </div>
+  </div>
+  <div class="hero-yellow">
+    <img src="imgs/chibi-deadpool-chilling-512x512.png" alt="Umesh" />
+  </div>
+</section>
+
+  <main>
+    <section id="about" class="section">
+      <h2>A little About Me</h2>
+      <p> I'm <strong>Umesh Chandra</strong>, an enthusiastic and detail-oriented <strong>Web Developer</strong> with a strong foundation in building clean, responsive, and user-friendly web applications.</p>
+    
+      <p>I graduated with a Bachelor's degree in <strong>Electrical and Electronics Engineering</strong> from <strong>National Institute of Technology, Calicut</strong>, where I combined my engineering problem-solving mindset with a growing passion for web development. During my academic years, I worked on various simulation tools and software projects, blending both <strong>technical logic and design thinking</strong>.</p>
+    
+      <p>My core strengths lie in <strong>HTML, CSS, JavaScript, React, and Next.js</strong>. I also have hands-on experience integrating APIs, working with databases like <strong>MySQL</strong>, and using tools like <strong>GitHub, Prisma ORM, and Node.js</strong>. I'm comfortable in fast-paced environments and love collaborating with others to bring ideas to life.</p>
+    
+      <p>Currently, I'm focused on enhancing my skills in full-stack development and building real-world projects like e-commerce websites, portfolio sites, and simulation tools that merge my engineering background with modern web technologies.</p>
+    
+      <p>My goal is to join a team where I can contribute meaningfully, grow as a developer, and create impactful digital experiences for users around the world.</p>
+    </section>
+
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <button onclick="toggleSkills()">Show/Hide Skills</button>
+      <ul id="skills-list" class="skills-list hidden">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+    
+
+    <section id="projects">
+      <h2>Projects</h2>
+    
+      <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>Built with Next.js, MySQL, and Prisma for managing student data.</p>
+      </div>
+    
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built using React and Framer Motion.</p>
+      </div>
+    
+      <div class="project-card">
+        <h3>IQ Note E-commerce Website</h3>
+        <p>A fully functional e-commerce platform for notebooks, developed using Next.js for the frontend and Java for backend integration (in progress).</p>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Umesh Chandra. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
