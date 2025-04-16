@@ -23,7 +23,7 @@ html, body {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -34,10 +34,13 @@ html, body {
 .nav-links {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0;
+  padding: 0; /* Aligns items to the right */
+  width: 100%;
 }
+
 
 .nav-links a {
   color: white;
@@ -207,11 +210,11 @@ footer {
 }
 
 /* Mobile Specific Fixes */
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
-
   .header-container {
     flex-direction: column;
     align-items: center;
